@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Córdoba Audiovisual · Polo Audiovisual Córdoba, Argentina</title>
+<meta name="description" content="Córdoba, Argentina: un territorio para producir, un ecosistema para crecer. Cash Rebate de hasta 40 %, locaciones, talento e industria audiovisual.">
+<!-- Vista previa al compartir por WhatsApp / redes. Cuando tengamos la dirección definitiva, completar la URL de la imagen. -->
+<meta property="og:title" content="Córdoba Audiovisual · Córdoba, Argentina">
+<meta property="og:description" content="Un territorio para producir. Un ecosistema para crecer.">
+<meta property="og:image" content="img/portada-rodaje.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23C85717'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   PALETA (5 colores) — cambiar acá cambia toda la página
+   ========================================================== */
+:root{
+  --naranja:#C85717;   /* principal Polo Audiovisual */
+  --blanco:#FFFFFF;
+  --negro:#1C1714;     /* negro cálido, uso medido */
+  --dorado:#CFA558;    /* detalle 1 (manual Córdoba Cultura) */
+  --crema:#F6EEE4;     /* detalle 2: fondos cálidos */
+  --radio:14px;
+  --ancho:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Roboto',system-ui,sans-serif;color:var(--negro);background:var(--blanco);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.eyebrow,.btn,.nav a,.num{font-family:'Poppins',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--ancho);margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--naranja)}
+.eyebrow svg{width:16px;height:16px}
+h2{font-size:clamp(1.7rem,4.5vw,2.6rem);line-height:1.15;font-weight:700;margin:12px 0 20px;letter-spacing:-.01em}
+h3{font-size:1.08rem;font-weight:600;line-height:1.3}
+p+p{margin-top:14px}
+.lead{font-size:1.1rem}
+.frase{font-family:'Poppins',sans-serif;font-weight:500;font-size:1.25rem;color:var(--naranja);margin-top:28px;padding-left:16px;border-left:3px solid var(--dorado)}
+svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-primario{background:var(--naranja);color:var(--blanco)}
+.btn-primario:hover{background:#b04b12}
+.btn-borde{border:1.5px solid currentColor}
+
+/* ================= ENCABEZADO / MENÚ ================= */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s,box-shadow .25s}
+header.solido{background:var(--negro);box-shadow:0 2px 18px rgba(0,0,0,.25)}
+.barra{display:flex;align-items:center;justify-content:space-between;height:68px}
+.barra img{height:40px;width:auto}
+.nav{display:flex;gap:26px}
+.nav a{color:var(--blanco);text-decoration:none;font-size:.88rem;font-weight:500;opacity:.9}
+.nav a:hover{color:var(--dorado);opacity:1}
+.menu-btn{display:none;background:none;border:0;color:var(--blanco);cursor:pointer;padding:6px}
+.menu-btn svg{width:28px;height:28px}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .nav{position:fixed;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--negro);padding:8px 22px 20px;transform:translateY(-130%);transition:transform .3s;z-index:-1}
+  .nav.abierto{transform:none}
+  .nav a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:1rem}
+}
+
+/* ================= PORTADA ================= */
+.portada{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--blanco);padding:120px 0 64px;
+  background:linear-gradient(180deg,rgba(28,23,20,.55) 0%,rgba(28,23,20,.15) 35%,rgba(28,23,20,.92) 85%),url(img/portada-rodaje.jpg) center 70%/cover no-repeat var(--negro)}
+.ubicacion{display:inline-flex;align-items:center;gap:8px;background:rgba(200,87,23,.92);padding:8px 16px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.06em}
+.ubicacion svg{width:16px;height:16px}
+.portada h1{font-size:clamp(2.6rem,9vw,5.2rem);line-height:1;font-weight:700;margin:22px 0 18px;letter-spacing:-.02em}
+.portada h1 span{color:var(--dorado);display:block}
+.portada .sub{font-size:clamp(1.1rem,2.6vw,1.4rem);max-width:620px;font-weight:400}
+.pilares{display:flex;flex-wrap:wrap;gap:8px 18px;margin:26px 0 34px;font-family:'Poppins',sans-serif;font-size:.85rem;color:var(--crema)}
+.pilares li{list-style:none;display:flex;align-items:center;gap:18px}
+.pilares li:not(:last-child)::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--naranja)}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+.coords{margin-top:40px;font-family:'Poppins',sans-serif;font-size:.75rem;letter-spacing:.2em;color:var(--dorado);opacity:.85}
+
+/* ================= CÓRDOBA ================= */
+.cordoba{background:var(--crema)}
+.dos-col{display:grid;gap:44px;align-items:center}
+@media (min-width:900px){.dos-col{grid-template-columns:1.05fr .95fr;gap:64px}}
+.foto{border-radius:var(--radio);overflow:hidden;box-shadow:0 20px 40px -18px rgba(28,23,20,.45)}
+.foto img{width:100%;height:100%;object-fit:cover}
+.datos{display:grid;grid-template-columns:1fr;gap:0;margin:30px 0 8px;border-top:1px solid rgba(28,23,20,.15)}
+.dato{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid rgba(28,23,20,.15)}
+.dato .num{font-size:1.7rem;font-weight:700;color:var(--naranja);min-width:140px;line-height:1.1}
+.dato span{font-size:.95rem}
+.paisajes{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.paisajes li{list-style:none;font-size:.82rem;font-family:'Poppins',sans-serif;background:var(--blanco);padding:6px 14px;border-radius:999px;border:1px solid rgba(200,87,23,.25)}
+
+/* ================= POR QUÉ ================= */
+.mosaico{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mosaico figure{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:1}
+.mosaico img{width:100%;height:100%;object-fit:cover}
+.mosaico figcaption{position:absolute;left:10px;bottom:10px;font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--blanco);background:rgba(28,23,20,.6);padding:4px 10px;border-radius:999px}
+.razones{list-style:none}
+.razones li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid rgba(28,23,20,.1)}
+.razones li:first-child{padding-top:4px}
+.icono{width:48px;height:48px;border-radius:50%;background:var(--crema);color:var(--naranja);display:grid;place-items:center;flex-shrink:0}
+.razones p{font-size:.96rem;margin-top:4px}
+@media (min-width:900px){.porque .dos-col{align-items:start}.porque .mosaico{position:sticky;top:96px}}
+
+/* ================= CASH REBATE ================= */
+.cash{background:var(--negro);color:var(--blanco)}
+.cash .eyebrow{color:var(--dorado)}
+.cash h2 small{display:block;font-size:.5em;font-weight:500;color:var(--crema);margin-top:10px;letter-spacing:0}
+.porcentajes{display:grid;gap:14px;margin:30px 0}
+@media (min-width:600px){.porcentajes{grid-template-columns:1fr 1fr}}
+.pct{background:rgba(255,255,255,.05);border:1px solid rgba(207,165,88,.35);border-radius:var(--radio);padding:24px}
+.pct .num{font-size:clamp(2.6rem,7vw,3.4rem);font-weight:700;color:var(--naranja);line-height:1}
+.pct .num small{font-size:.35em;color:var(--dorado);display:block;letter-spacing:.14em;margin-bottom:6px}
+.pct p{font-size:.93rem;margin-top:10px;color:var(--crema)}
+.resultados{margin-top:64px}
+.resultados h3{font-family:'Poppins',sans-serif;color:var(--dorado);letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}
+.grilla4{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(207,165,88,.3);border-radius:var(--radio);overflow:hidden;margin-top:18px}
+@media (min-width:900px){.grilla4{grid-template-columns:repeat(4,1fr)}}
+.grilla4 div{background:var(--negro);padding:26px 20px}
+.grilla4 .num{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:700;color:var(--blanco);line-height:1.1}
+.grilla4 .num em{font-style:normal;color:var(--naranja);display:block;font-size:.5em;letter-spacing:.14em;margin-bottom:4px}
+.grilla4 .num{white-space:nowrap}
+@media (max-width:420px){.grilla4 div{padding:22px 14px}.grilla4 .num{font-size:1.35rem}}
+.grilla4 p{font-size:.85rem;color:var(--crema);margin-top:8px}
+.paises{margin-top:22px;font-size:.9rem;color:var(--crema)}
+.paises b{font-family:'Poppins',sans-serif;color:var(--dorado);font-weight:600}
+.convocatoria{margin-top:48px;background:var(--naranja);border-radius:var(--radio);padding:30px;display:grid;gap:20px;align-items:center}
+@media (min-width:800px){.convocatoria{grid-template-columns:1fr auto;padding:36px 40px}}
+.convocatoria .etiqueta{font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:.12em;font-size:.8rem}
+.convocatoria p{font-size:1.05rem;margin-top:6px}
+.convocatoria .btn{background:var(--blanco);color:var(--naranja)}
+
+/* ================= FOCUS ================= */
+.focus{background:var(--crema)}
+.tarjetas{display:grid;gap:14px;margin-top:34px}
+@media (min-width:640px){.tarjetas{grid-template-columns:1fr 1fr}}
+.tarjeta{background:var(--blanco);border-radius:var(--radio);padding:24px;display:flex;gap:16px}
+.tarjeta .icono{background:var(--crema)}
+.tarjeta p{font-size:.9rem;margin-top:6px}
+.cifras{display:grid;grid-template-columns:1fr;margin-top:44px;border-top:2px solid var(--naranja)}
+.cifras div{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid rgba(28,23,20,.12)}
+.cifras .num{font-size:1.6rem;font-weight:700;color:var(--naranja);min-width:110px}
+@media (min-width:900px){
+  .cifras{grid-template-columns:repeat(5,1fr);border-bottom:1px solid rgba(28,23,20,.12)}
+  .cifras div{flex-direction:column;gap:4px;padding:22px 18px;border-bottom:0;border-left:1px solid rgba(28,23,20,.12)}
+  .cifras div:first-child{border-left:0;padding-left:0}
+}
+.cifras span{font-size:.9rem}
+.centrado{text-align:center;margin-top:40px}
+
+.focus .foto{aspect-ratio:4/3}
+@media (max-width:899px){.cash .foto,.cordoba .foto{aspect-ratio:4/3}}
+
+/* ================= RECURSOS ================= */
+.recursos-grid{display:grid;gap:12px;margin-top:30px}
+@media (min-width:700px){.recursos-grid{grid-template-columns:1fr 1fr}}
+.recurso{display:flex;align-items:center;gap:16px;padding:20px 22px;border:1.5px solid rgba(28,23,20,.12);border-radius:var(--radio);text-decoration:none;transition:border-color .2s,transform .2s}
+.recurso:hover{border-color:var(--naranja);transform:translateY(-2px)}
+.recurso b{font-family:'Poppins',sans-serif;font-weight:600;display:block}
+.recurso small{font-size:.85rem;opacity:.75}
+.recurso .flecha{margin-left:auto;color:var(--naranja)}
+
+/* ================= CIERRE ================= */
+.cierre{background:var(--naranja);color:var(--blanco);text-align:center}
+.cierre h2{font-size:clamp(2rem,6vw,3.4rem);text-transform:uppercase}
+.verbos{font-family:'Poppins',sans-serif;font-weight:600;letter-spacing:.14em;font-size:.82rem;color:var(--negro)}
+.cierre p.lead{max-width:680px;margin:22px auto 0}
+.socio{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:600;margin-top:34px}
+.firma{margin-top:40px;font-size:.9rem}
+.firma b{font-family:'Poppins',sans-serif;display:block;font-size:1rem}
+
+/* ================= PIE ================= */
+footer{background:var(--negro);color:var(--crema);padding:64px 0 28px;font-size:.92rem}
+.pie{display:grid;gap:36px}
+@media (min-width:800px){.pie{grid-template-columns:1.3fr 1fr 1fr}}
+footer h4{font-family:'Poppins',sans-serif;color:var(--dorado);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin:9px 0}
+footer li a{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+footer li a:hover{color:var(--dorado)}
+footer li svg{width:18px;height:18px}
+.pie img.logo{height:46px;width:auto;margin-bottom:16px}
+.faja{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:28px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center}
+.faja img{max-width:520px;width:100%;height:auto}
+.faja small{opacity:.6;font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- ==================== ENCABEZADO / MENÚ ==================== -->
+<header id="top">
+  <div class="wrap barra">
+    <a href="#inicio" aria-label="Inicio"><img src="img/logo-polo-blanco.png" alt="Polo Audiovisual Córdoba"></a>
+    <nav class="nav" id="nav">
+      <a href="#cordoba">Córdoba</a>
+      <a href="#por-que">Por qué producir</a>
+      <a href="#cash-rebate">Cash Rebate</a>
+      <a href="#focus">Focus Córdoba</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+      <svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== SECCIÓN: PORTADA ==================== -->
+<section class="portada" id="inicio">
+  <div class="wrap">
+    <span class="ubicacion">
+      <svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      Córdoba · Argentina
+    </span>
+    <h1>Córdoba <span>Audiovisual</span></h1>
+    <p class="sub">Un territorio para producir. Un ecosistema para crecer.</p>
+    <ul class="pilares">
+      <li>Talento</li><li>Incentivos</li><li>Locaciones</li><li>Infraestructura</li><li>Industria</li><li>Conexión internacional</li>
+    </ul>
+    <div class="acciones">
+      <a class="btn btn-primario" href="#cash-rebate">Cash Rebate hasta 40 %
+        <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-borde" href="#contacto">Contacto</a>
+    </div>
+    <p class="coords">31°25′ S · 64°11′ O — CENTRO DE ARGENTINA</p>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: CÓRDOBA ==================== -->
+<section class="cordoba" id="cordoba">
+  <div class="wrap dos-col">
+    <div>
+      <span class="eyebrow">
+        <svg class="i" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Córdoba, Argentina
+      </span>
+      <h2>Una provincia mediterránea en el centro de Argentina</h2>
+      <p class="lead">Ubicada en el centro del país, Córdoba combina conectividad, diversidad geográfica, patrimonio cultural y capacidades productivas.</p>
+      <div class="datos">
+        <div class="dato"><span class="num">165.321 km²</span><span>de extensión</span></div>
+        <div class="dato"><span class="num">3.308.876</span><span>habitantes en la provincia</span></div>
+        <div class="dato"><span class="num">1.329.604</span><span>habitantes en la ciudad de Córdoba</span></div>
+      </div>
+      <p>Córdoba tiene un clima templado y moderado, con las cuatro estaciones definidas: desde paisajes con nieve en invierno hasta temperaturas que pueden alcanzar los 40 °C en verano.</p>
+      <ul class="paisajes">
+        <li>Sierras</li><li>Bosques</li><li>Llanuras</li><li>Lagos</li><li>Salinas</li><li>Mar Chiquita</li><li>Paisajes volcánicos</li>
+      </ul>
+      <p class="frase">Un territorio. Múltiples escenarios.</p>
+    </div>
+    <div class="foto"><img src="img/cordoba-sierras.jpg" alt="Drone filmando sobre las sierras de Córdoba al atardecer" width="800" height="1000"></div>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: POR QUÉ PRODUCIR ==================== -->
+<section class="porque" id="por-que">
+  <div class="wrap">
+    <span class="eyebrow">Locaciones, conectividad y capacidades</span>
+    <h2>¿Por qué producir en Córdoba?</h2>
+    <div class="dos-col">
+      <div class="mosaico">
+        <figure><img src="img/talento-edicion.jpg" alt="Edición y color"><figcaption>Postproducción</figcaption></figure>
+        <figure><img src="img/talento-animacion.jpg" alt="Animación"><figcaption>Animación</figcaption></figure>
+        <figure><img src="img/talento-videojuegos.jpg" alt="Videojuegos"><figcaption>Videojuegos</figcaption></figure>
+        <figure><img src="img/talento-sonido.jpg" alt="Sonido"><figcaption>Sonido</figcaption></figure>
+      </div>
+      <ul class="razones">
+        <li><div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div>
+          <div><h3>Conectividad</h3><p>Su ubicación en el centro de Argentina, la conectividad aérea y la red vial facilitan el acceso y los desplazamientos entre distintas regiones de la provincia.</p></div></li>
+        <li><div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></div>
+          <div><h3>Locaciones</h3><p>Sierras, llanuras, bosques, lagos, salinas, Mar Chiquita, paisajes volcánicos, pequeñas localidades y entornos urbanos, además del legado jesuítico reconocido como Patrimonio Mundial.</p></div></li>
+        <li><div class="icono"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></svg></div>
+          <div><h3>Clima y luz natural</h3><p>Pocas lluvias y extensas horas de luz natural durante el verano ofrecen condiciones para planificar rodajes durante buena parte del año.</p></div></li>
+        <li><div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div><h3>Talento</h3><p>Universidades públicas y privadas e instituciones vinculadas con el audiovisual, la animación, los videojuegos y las industrias creativas forman capacidades profesionales en el territorio.</p></div></li>
+        <li><div class="icono"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><circle cx="9" cy="9" r=".6" fill="currentColor"/><circle cx="15" cy="15" r=".6" fill="currentColor"/></svg></div>
+          <div><h3>Políticas de incentivo</h3><p>Programas de fomento, Cash Rebate, infraestructura, formación, mercados y acompañamiento institucional para recibir producciones y coproducciones.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: CASH REBATE ==================== -->
+<section class="cash" id="cash-rebate">
+  <div class="wrap">
+    <div class="dos-col">
+      <div>
+        <span class="eyebrow">Córdoba Distrito Audiovisual</span>
+        <h2>Cash Rebate<small>Producir en Córdoba. Proyectarse al mundo.</small></h2>
+        <p>Promueve producciones audiovisuales y videojuegos con financiamiento privado mediante el reintegro de gastos elegibles efectuados en Córdoba durante la preproducción, producción y postproducción.</p>
+        <div class="porcentajes">
+          <div class="pct"><div class="num"><small>HASTA</small>40 %</div><p>de reintegro para productoras cordobesas y coproducciones nacionales e internacionales.</p></div>
+          <div class="pct"><div class="num"><small>HASTA</small>30 %</div><p>de reintegro para servicios de producción.</p></div>
+        </div>
+      </div>
+      <div class="foto"><img src="img/cash-rebate-set.jpg" alt="Cámara en un set de filmación" width="800" height="1000"></div>
+    </div>
+
+    <div class="resultados">
+      <h3>Resultados 2025 · Inversión que genera producción</h3>
+      <div class="grilla4">
+        <div><div class="num"><em>ARS</em>5.000 M</div><p>Presupuesto destinado al programa</p></div>
+        <div><div class="num"><em>ARS</em>13.300 M</div><p>Inversión total realizada en Córdoba</p></div>
+        <div><div class="num">37</div><p>Producciones: publicidad, largometrajes, series, documentales y animación</p></div>
+        <div><div class="num">10</div><p>Países en coproducciones internacionales</p></div>
+      </div>
+      <p class="paises"><b>Países:</b> España · México · Puerto Rico · Colombia · Italia · Chile · Uruguay · Estados Unidos · Panamá · Francia</p>
+    </div>
+
+    <div class="convocatoria">
+      <div>
+        <div class="etiqueta">CONVOCATORIA 2026 ABIERTA</div>
+        <p>Presupuesto de ARS 2.500 millones, equivalente a aproximadamente EUR 1,4 millones.</p>
+      </div>
+      <a class="btn" href="https://survey123.arcgis.com/share/e1533b2933d7490e85a02cda8053c793?portalUrl=https%3A%2F%2Fsmart-geo-data.cba.gov.ar%2Fportal" target="_blank" rel="noopener">Bases y Condiciones 2026
+        <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: FOCUS CÓRDOBA ==================== -->
+<section class="focus" id="focus">
+  <div class="wrap">
+    <div class="dos-col">
+      <div>
+        <span class="eyebrow">Mercado B2B</span>
+        <h2>Focus Córdoba: donde las industrias creativas hacen negocios</h2>
+        <p>Integra audiovisual, animación, videojuegos y música, y promueve la comercialización, exportación y financiación de activos creativos. Acompaña el ciclo de los proyectos desde su desarrollo hasta su llegada al mercado internacional.</p>
+      </div>
+      <div class="foto"><img src="img/focus-tech.jpg" alt="Experiencia de realidad virtual" width="800" height="1000"></div>
+    </div>
+    <div class="tarjetas">
+      <div class="tarjeta"><div class="icono"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <div><h3>Business Hub</h3><p>Rondas de negocios internacionales · Oferta exportable · Foro de inversión.</p></div></div>
+      <div class="tarjeta"><div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div>
+        <div><h3>Academy</h3><p>Mentorías · Masterclasses · Capacitación.</p></div></div>
+      <div class="tarjeta"><div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <div><h3>Networking</h3><p>Conexiones profesionales · Encuentros sectoriales · Espacios de vinculación.</p></div></div>
+      <div class="tarjeta"><div class="icono"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+        <div><h3>Tech Showcase</h3><p>IA generativa · Motores de juego · Captura de movimiento · Audio inmersivo.</p></div></div>
+    </div>
+    <div class="cifras">
+      <div><span class="num">+1.500</span><span>reuniones B2B</span></div>
+      <div><span class="num">100</span><span>operadores nacionales e internacionales</span></div>
+      <div><span class="num">+5.000</span><span>asistentes presenciales</span></div>
+      <div><span class="num">+40</span><span>ciudades representadas</span></div>
+      <div><span class="num">+300</span><span>participaciones en mentorías y masterclasses</span></div>
+    </div>
+    <div class="centrado">
+      <a class="btn btn-primario" href="https://catalogodeproduccionpoloaudiovisualcordoba.wordpress.com/" target="_blank" rel="noopener">Producciones realizadas con el apoyo del Polo
+        <svg class="i" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: RECURSOS ==================== -->
+<section id="recursos">
+  <div class="wrap">
+    <span class="eyebrow">Recursos</span>
+    <h2>Explorá el ecosistema</h2>
+    <div class="recursos-grid">
+      <a class="recurso" href="https://canva.link/9u9ly6fg2andvuf" target="_blank" rel="noopener">
+        <div class="icono"><svg class="i" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7h2A5.6 5.6 0 0 0 22 10.8C22 6 17.5 2 12 2z"/></svg></div>
+        <div><b>Catálogo de estudios de animación</b><small>Estudios y capacidades en Córdoba</small></div>
+        <svg class="i flecha" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="recurso" href="https://youtu.be/emvZkr8XWM0" target="_blank" rel="noopener">
+        <div class="icono"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l6-3.5z"/></svg></div>
+        <div><b>Locaciones en 360°</b><small>Recorré Córdoba en video</small></div>
+        <svg class="i flecha" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="recurso" href="https://survey123.arcgis.com/share/e1533b2933d7490e85a02cda8053c793?portalUrl=https%3A%2F%2Fsmart-geo-data.cba.gov.ar%2Fportal" target="_blank" rel="noopener">
+        <div class="icono"><svg class="i" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div>
+        <div><b>Bases y Condiciones Cash Rebate 2026</b><small>Córdoba Distrito Audiovisual</small></div>
+        <svg class="i flecha" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="recurso" href="https://catalogodeproduccionpoloaudiovisualcordoba.wordpress.com/" target="_blank" rel="noopener">
+        <div class="icono"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5M2 12h20"/></svg></div>
+        <div><b>Catálogo de producciones</b><small>Realizadas con el apoyo del Polo</small></div>
+        <svg class="i flecha" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SECCIÓN: CIERRE ==================== -->
+<section class="cierre">
+  <div class="wrap">
+    <p class="verbos">PRODUCIR · COPRODUCIR · INVERTIR · DESARROLLAR · CONECTAR</p>
+    <h2>Let’s produce in Córdoba</h2>
+    <p class="lead">Córdoba ofrece territorio, talento, incentivos, infraestructura y una política audiovisual que conecta desarrollo local con industria internacional.</p>
+    <p class="socio">Tu próximo proyecto puede tener a Córdoba como socio.</p>
+    <p class="firma"><b>Silvina Nano</b>Subdirectora de Industrias Culturales y Coordinadora del Polo Audiovisual Córdoba · Agencia Córdoba Cultura</p>
+  </div>
+</section>
+
+<!-- ==================== PIE DE PÁGINA / CONTACTO ==================== -->
+<footer id="contacto">
+  <div class="wrap">
+    <div class="pie">
+      <div>
+        <img class="logo" src="img/logo-polo-blanco.png" alt="Polo Audiovisual Córdoba">
+        <p>Organismo público de la Agencia Córdoba Cultura, Gobierno de la Provincia de Córdoba, Argentina.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:poloaudiovisualcordoba@gmail.com"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>poloaudiovisualcordoba@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/poloaudiovisualcordoba/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>@poloaudiovisualcordoba</a></li>
+          <li><a href="https://cultura.cba.gov.ar/polo-audiovisual-cordoba/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>cultura.cba.gov.ar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#cash-rebate">Cash Rebate</a></li>
+          <li><a href="#focus">Focus Córdoba</a></li>
+          <li><a href="https://youtu.be/emvZkr8XWM0" target="_blank" rel="noopener">Locaciones en 360°</a></li>
+          <li><a href="https://catalogodeproduccionpoloaudiovisualcordoba.wordpress.com/" target="_blank" rel="noopener">Catálogo de producciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="faja">
+      <img src="img/faja-logos-negativo.png" alt="Córdoba es Cultura · Gobierno de la Provincia de Córdoba">
+      <small>Polo Audiovisual Córdoba · Córdoba, Argentina</small>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Menú en celular + encabezado sólido al hacer scroll
+const btn=document.getElementById('menuBtn'),nav=document.getElementById('nav'),hdr=document.getElementById('top');
+btn.addEventListener('click',()=>{const a=nav.classList.toggle('abierto');btn.setAttribute('aria-expanded',a);hdr.classList.add('solido')});
+nav.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{nav.classList.remove('abierto');btn.setAttribute('aria-expanded',false)}));
+const f=()=>hdr.classList.toggle('solido',scrollY>40||nav.classList.contains('abierto'));addEventListener('scroll',f,{passive:true});f();
+</script>
+</body>
+</html>
